@@ -1,0 +1,75 @@
+[
+    {
+        "nombre": "God of War",
+        "precio": 2500,
+        "descripcion": "Is a war game",
+        "tipo": "Accion",
+        "id": 0
+    },
+    {
+        "nombre":"Rachet and Clank" ,
+        "precio":1500 ,
+        "descripcion": "Rachet Adventure game",
+        "tipo": "Adventure",
+        "id": 1
+    },
+    {
+        "nombre":"Assasins Creed" ,
+        "precio": 500,
+        "descripcion": "Follow the stroy of Ezio",
+        "tipo": "Stealth",
+        "id": 2
+    },
+    {
+        "nombre": "Rocket Leage",
+        "precio":0 ,
+        "descripcion": "!This is Rocket Leage!",
+        "tipo": "Sports",
+        "id":3
+    },
+    {
+        "nombre": "Call of Duty",
+        "precio":5500 ,
+        "descripcion": "Experience WW3",
+        "tipo": "Shooter",
+        "id": 4
+    },
+    {
+        "nombre": "Ghost of Tsushima",
+        "precio": 3500,
+        "descripcion": "Seek vengeance as the Ghost of Tsushima and defend your home.",
+        "tipo": "Stealth",
+        "id":5
+    },
+    {
+        "nombre":"Metro" ,
+        "precio": 1500,
+        "descripcion": "Be a survivor in a post-apocalyptic radioactive world filled with monsters and other hostiles",
+        "tipo": "Horror",
+        "id": 6
+    },
+    {
+        "nombre": "Sifu",
+        "precio": 3600,
+        "descripcion": "Follow the story of a young kung fu apprentice seeking revenge on his father's killers",
+        "tipo": "Accion",
+        "id": 7
+    },
+    {
+        "nombre": "The Finals",
+        "precio": 0,
+        "descripcion": "First-person, free-to-play shooter filled with action and destruction",
+        "tipo": "Shooter",
+        "id": 8
+    },
+    {
+        "nombre": "Far Cry",
+        "precio": 1100,
+        "descripcion": "Make your way through evil mercenaries trying to control the island and escape",
+        "tipo": "Shooter",
+        "id": 9
+    }
+]
+
+
+

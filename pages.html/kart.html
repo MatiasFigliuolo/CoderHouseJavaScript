@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header class="navegador colorFondo">
+
+        <a href="../index.html" class="title">
+            <h1>GameHaven</h1>
+        </a>
+        <br>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navFixer colorFondo">
+            <div class="container-fluid colorFondo">
+                <a class="navbar-brand" href="../index.html">Games</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html"
+                                onclick="addGamesToHTML(`Accion`)">Accion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" onclick="addGamesToHTML(`Sports`)">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" onclick="addGamesToHTML(`Horror`)">Horror</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../index.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Others
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html"
+                                        onclick="addGamesToHTML(`Adventure`)">Adventure</a></li>
+                                <li><a class="dropdown-item" href="../index.html"
+                                        onclick="addGamesToHTML(`Stealth`)">Stealth</a></li>
+                                <li><a class="dropdown-item" href="../index.html"
+                                        onclick="addGamesToHTML(`RPG`)">RPG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="kartDiv">
+        <button onclick="deleatKart()" class="deleatButton">Deleat</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/kart.js"></script>
+</body>
+
+</html>
