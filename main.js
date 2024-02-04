@@ -33,16 +33,7 @@ function addGamesToHTML(filtro) //Agrega todos los juegos a formato html y tambi
     } else {
         for (let i = 0; i < listaJuegos.length; i++) {
             if (filtro === listaJuegos[i].tipo) {
-                let juegoDiv = document.createElement("div");
-                juegoDiv.classList.add("col-xl-12", "col-md-12", "col-sm-12", "text-start", "estiloJuegos");
-                juegoDiv.innerHTML = `
-                <p>Title: ${listaJuegos[i].nombre}</p>
-                <p>Price: $${listaJuegos[i].precio}</p>
-                <p>Type: ${listaJuegos[i].tipo}</p>
-                <p>${listaJuegos[i].descripcion}</p>
-                <button class="buttonFixer" onclick="agregarAlCarrito(${i})">Buy</button>
-            `;
-                juegos.appendChild(juegoDiv);
+                juegos.innerHTML += `<div class="col-xl-12 col-md-12 col-sm-12 text-start estiloJuegos"> Title: ${listaJuegos[i].nombre}<br>Price: $${listaJuegos[i].precio}<br>Type: ${listaJuegos[i].tipo}<br>${listaJuegos[i].descripcion} <br> <button class="buttonFixer" onclick="agregarAlCarrito(${i})">Buy</button></div>`;
             }
         }
     }
