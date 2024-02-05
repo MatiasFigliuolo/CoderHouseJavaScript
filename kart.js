@@ -1,16 +1,16 @@
-kart();
+kart();          //funcion que muestra el carrito y da opcion de borrarlo
 function kart() {
-    let carrito = JSON.parse(localStorage.getItem("games"));
+    let kart = JSON.parse(localStorage.getItem("games"));
     let div = document.getElementById("kartDiv");
     div.classList.add("kart");
 
-    div.innerHTML = carrito && carrito.length > 0 ? "<p>Items in the cart:</p>" : "<p>¡Carrito Vacío!</p>";
-    if (carrito && carrito.length > 0) {
+    div.innerHTML = kart && kart.length > 0 ? "<p>Items in the cart:</p>" : "<p>¡Carrito Vacío!</p>";
+    if (kart && kart.length > 0) {
         let total = 0;
 
-        carrito.forEach((item, index) => {
-            div.innerHTML += `<p class="itemsInKart">${index + 1}. <span>${item.nombre}</span> - $${item.precio.toFixed(2)}</p>`;
-            total += item.precio;
+        kart.forEach((item, index) => {
+            div.innerHTML += `<p class="itemsInKart">${index + 1}. <span>${item.name}</span> - $${item.price.toFixed(2)}</p>`;
+            total += item.price;
         });
         div.innerHTML += `<p>Total: $${total.toFixed(2)}</p>`;
     }
@@ -18,10 +18,10 @@ function kart() {
     document.body.appendChild(div);
 }
 
-function deleatKart()
+function deleatKart()  //funcion de borrado del carrito si recibe doble confirmacion del usuario
 {
-    let carrito = JSON.parse(localStorage.getItem("games"));
-    if (carrito && carrito.length > 0){
+    let kart = JSON.parse(localStorage.getItem("games"));
+    if (kart && kart.length > 0){
     Swal.fire({
         title: "Are you sure?",
         text: "You won't be able to revert this!",
@@ -37,11 +37,11 @@ function deleatKart()
             text: "Your file has been deleted.",
             icon: "success"
           });
-          carrito=[];
-          localStorage.setItem("games", JSON.stringify(carrito));
+          kart=[];
+          localStorage.setItem("games", JSON.stringify(kart));
           setTimeout(() => {
             location.reload();
-        }, 5000);
+        }, 2000);
         }
       });
      
